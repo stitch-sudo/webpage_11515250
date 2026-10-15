@@ -76,6 +76,7 @@
     .button-primary { background: var(--sand); color: var(--navy); }
     .button-primary:hover { background: #f0ca84; }
     .button-outline { border-color: rgba(255,255,255,.8); color: #fff; }
+    .button-outline { border-color: rgba(255, 255, 255, .8); color: #fff; }
     .button-outline:hover { background: #fff; color: var(--navy); }
 
     .site-header {
@@ -85,6 +86,7 @@
       left: 0;
       width: 100%;
       border-bottom: 1px solid rgba(255,255,255,.27);
+      border-bottom: 1px solid rgba(255, 255, 255, .27);
     }
     .navbar {
       display: flex;
@@ -111,6 +113,7 @@
     .brand-copy small { margin-top: 4px; color: var(--sky); font-size: 8px; letter-spacing: .15em; }
     .nav-links { display: flex; align-items: center; gap: 25px; }
     .nav-links a { position: relative; color: rgba(255,255,255,.92); font-size: 13px; font-weight: 500; white-space: nowrap; }
+    .nav-links a { position: relative; color: rgba(255, 255, 255, .92); font-size: 13px; font-weight: 500; white-space: nowrap; }
     .nav-links a:not(.nav-cta)::after {
       position: absolute;
       right: 0;
@@ -123,6 +126,7 @@
     }
     .nav-links a:not(.nav-cta):hover::after { right: auto; left: 0; width: 100%; }
     .nav-links .nav-cta { padding: 7px 12px; border: 1px solid rgba(255,255,255,.78); }
+    .nav-links .nav-cta { padding: 7px 12px; border: 1px solid rgba(255, 255, 255, .78); }
     .nav-links .nav-cta:hover { background: #fff; color: var(--navy); }
     .menu-toggle { display: none; padding: 4px; border: 0; background: transparent; color: #fff; font-size: 24px; line-height: 1; }
 
@@ -134,6 +138,7 @@
       align-items: stretch;
       background:
         radial-gradient(circle at 85% 26%, rgba(117,198,232,.35) 0, rgba(117,198,232,.08) 18%, transparent 43%),
+        radial-gradient(circle at 85% 26%, rgba(117, 198, 232, .35) 0, rgba(117, 198, 232, .08) 18%, transparent 43%),
         linear-gradient(135deg, #062742 0%, #062742 58%, #0a4168 100%);
       color: #fff;
     }
@@ -145,6 +150,7 @@
       width: 50vw;
       height: 50vw;
       border: 1px solid rgba(117,198,232,.13);
+      border: 1px solid rgba(117, 198, 232, .13);
       border-radius: 50%;
       content: "";
     }
@@ -171,10 +177,13 @@
     }
     .hero-title .sky-word { color: var(--sky); }
     .hero-lede { max-width: 490px; margin: 25px 0 0; color: rgba(255,255,255,.76); }
+    .hero-lede { max-width: 490px; margin: 25px 0 0; color: rgba(255, 255, 255, .76); }
     .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
     .hero-meta { margin: 27px 0 0; color: var(--sky); font-size: 10px; font-weight: 700; letter-spacing: .18em; }
     .scroll-note { display: flex; align-items: center; gap: 10px; margin: 53px 0 0; color: rgba(255,255,255,.55); font-size: 9px; letter-spacing: .18em; }
     .scroll-note::before { width: 38px; height: 1px; background: rgba(255,255,255,.45); content: ""; }
+    .scroll-note { display: flex; align-items: center; gap: 10px; margin: 53px 0 0; color: rgba(255, 255, 255, .55); font-size: 9px; letter-spacing: .18em; }
+    .scroll-note::before { width: 38px; height: 1px; background: rgba(255, 255, 255, .45); content: ""; }
 
     .hero-art {
       position: relative;
@@ -207,9 +216,29 @@
     .steam { position: absolute; bottom: 59%; left: 49%; width: 23px; height: 58px; border-left: 2px solid rgba(255,255,255,.63); border-radius: 50%; transform: rotate(16deg); }
     .steam::after { position: absolute; top: -5px; left: 14px; width: 18px; height: 48px; border-right: 2px solid rgba(255,255,255,.44); border-radius: 50%; content: ""; }
     .art-label { position: absolute; z-index: 3; right: -11px; top: 42%; display: grid; gap: 2px; padding: 10px 11px; border-left: 2px solid var(--sand); background: rgba(6,39,66,.86); color: #fff; }
+    .hero-photo {
+      display: block;
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+      box-shadow: 24px 24px 0 rgba(117, 198, 232, .13), var(--shadow);
+    }
+    .art-label {
+      position: absolute;
+      z-index: 3;
+      right: -11px;
+      top: 42%;
+      display: grid;
+      gap: 2px;
+      padding: 10px 11px;
+      border-left: 2px solid var(--sand);
+      background: rgba(6, 39, 66, .86);
+      color: #fff;
+    }
     .art-label strong { font-family: "Playfair Display", serif; font-size: 22px; line-height: 1; }
     .art-label span { color: var(--sky); font-size: 9px; letter-spacing: .09em; }
     .art-label small { color: rgba(255,255,255,.72); font-size: 9px; }
+    .art-label small { color: rgba(255, 255, 255, .72); font-size: 9px; }
 
     .story { padding: 115px 0 120px; background: #fff; }
     .story-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(45px, 9vw, 105px); align-items: center; }
@@ -255,12 +284,16 @@
     .coffee-card:nth-child(2) { background: #106396; }
     .coffee-card:nth-child(3) { background: #164c68; }
     .coffee-card::after { position: absolute; right: -73px; bottom: -90px; width: 230px; height: 230px; border: 25px solid rgba(117,198,232,.15); border-radius: 50%; content: ""; }
+    .coffee-card::after { position: absolute; right: -73px; bottom: -90px; width: 230px; height: 230px; border: 25px solid rgba(117, 198, 232, .15); border-radius: 50%; content: ""; }
     .coffee-card > * { position: relative; z-index: 1; }
     .bean-no { margin: 0; color: var(--sky); font-family: "Playfair Display", serif; font-size: 14px; font-weight: 600; letter-spacing: .11em; }
     .origin { margin: 19px 0 5px; color: rgba(255,255,255,.67); font-size: 10px; font-weight: 700; letter-spacing: .13em; }
+    .origin { margin: 19px 0 5px; color: rgba(255, 255, 255, .67); font-size: 10px; font-weight: 700; letter-spacing: .13em; }
     .bean-name { margin: 0; font-family: "Noto Serif TC", serif; font-size: 24px; font-weight: 700; letter-spacing: .04em; line-height: 1.35; }
     .flavour { margin: 14px 0 0; color: rgba(255,255,255,.79); font-size: 14px; }
     .coffee-bottom { display: flex; align-items: center; justify-content: space-between; gap: 13px; margin-top: auto; padding-top: 23px; border-top: 1px solid rgba(255,255,255,.22); }
+    .flavour { margin: 14px 0 0; color: rgba(255, 255, 255, .79); font-size: 14px; }
+    .coffee-bottom { display: flex; align-items: center; justify-content: space-between; gap: 13px; margin-top: auto; padding-top: 23px; border-top: 1px solid rgba(255, 255, 255, .22); }
     .price { font-family: "Playfair Display", serif; font-size: 14px; white-space: nowrap; }
     .save-button { padding: 5px 0; border: 0; background: transparent; color: #fff; font-size: 13px; font-weight: 600; white-space: nowrap; transition: color .2s ease; }
     .save-button:hover { color: var(--sand); }
@@ -272,12 +305,86 @@
     .brew-art::after { position: absolute; top: 49px; left: 46px; width: 70px; height: 35px; border-top: 1px solid var(--sky); border-left: 1px solid var(--sky); content: ""; }
     .pour-rings { position: absolute; top: 50%; left: 50%; width: 238px; height: 238px; border: 1px solid rgba(12,91,149,.35); border-radius: 50%; transform: translate(-50%,-46%); }
     .pour-rings::before, .pour-rings::after { position: absolute; border: 1px solid rgba(12,91,149,.28); border-radius: 50%; content: ""; }
+    .brew-art {
+      position: relative;
+      min-height: 448px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: linear-gradient(138deg, #eef9fa 0 50%, #d6edf3 50% 100%);
+    }
+    .brew-art::before {
+      position: absolute;
+      top: 35px;
+      left: 34px;
+      width: 70px;
+      height: 1px;
+      background: var(--blue);
+      box-shadow: 0 9px 0 var(--blue), 0 18px 0 var(--blue);
+      content: "";
+    }
+    .pour-rings {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 238px;
+      height: 238px;
+      border: 1px solid rgba(12, 91, 149, .35);
+      border-radius: 50%;
+      transform: translate(-50%, -46%);
+    }
+    .pour-rings::before, .pour-rings::after {
+      position: absolute;
+      border: 1px solid rgba(12, 91, 149, .28);
+      border-radius: 50%;
+      content: "";
+    }
     .pour-rings::before { inset: 27px; }
     .pour-rings::after { inset: 57px; }
     .pour-line { position: absolute; top: 39px; left: 50%; width: 1px; height: 140px; background: var(--blue); transform: rotate(24deg); transform-origin: bottom; }
     .v60 { position: absolute; top: 50%; left: 50%; width: 140px; height: 105px; border: 3px solid var(--navy); border-top-width: 4px; background: rgba(255,255,255,.7); clip-path: polygon(0 0, 100% 0, 74% 100%, 26% 100%); transform: translate(-50%,-33%); }
     .v60::after { position: absolute; bottom: -61px; left: 35px; width: 64px; height: 58px; border: 3px solid var(--navy); border-radius: 8px 8px 19px 19px; background: linear-gradient(to top, #6c3924 0 31%, rgba(255,255,255,.5) 32%); content: ""; }
     .brew-caption { position: absolute; right: 27px; bottom: 25px; display: grid; color: var(--navy); text-align: right; }
+    .pour-line {
+      position: absolute;
+      top: 39px;
+      left: 50%;
+      width: 1px;
+      height: 140px;
+      background: var(--blue);
+      transform: rotate(24deg);
+      transform-origin: bottom;
+    }
+    .v60 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 140px;
+      height: 105px;
+      border: 3px solid var(--navy);
+      border-top-width: 4px;
+      background: rgba(255, 255, 255, .7);
+      clip-path: polygon(0 0, 100% 0, 74% 100%, 26% 100%);
+      transform: translate(-50%, -33%);
+    }
+    .v60::after {
+      position: absolute;
+      bottom: -61px;
+      left: 35px;
+      width: 64px;
+      height: 58px;
+      border: 3px solid var(--navy);
+      border-radius: 8px 8px 19px 19px;
+      background: linear-gradient(to top, #6c3924 0 31%, rgba(255, 255, 255, .5) 32%);
+      content: "";
+    }
+    .brew-caption {
+      position: absolute;
+      right: 27px;
+      bottom: 25px;
+      display: grid;
+      color: var(--navy);
+      text-align: right;
+    }
     .brew-caption strong { font-family: "Playfair Display", serif; font-size: 21px; letter-spacing: .05em; }
     .brew-caption span { font-size: 10px; font-weight: 700; letter-spacing: .12em; }
     .brew-content .section-copy { max-width: 530px; }
@@ -289,6 +396,7 @@
 
     .visit { position: relative; overflow: hidden; padding: 116px 0; background: var(--navy); color: #fff; text-align: center; }
     .visit::before, .visit::after { position: absolute; width: 380px; height: 380px; border: 1px solid rgba(117,198,232,.19); border-radius: 50%; content: ""; }
+    .visit::before, .visit::after { position: absolute; width: 380px; height: 380px; border: 1px solid rgba(117, 198, 232, .19); border-radius: 50%; content: ""; }
     .visit::before { top: -250px; left: -145px; }
     .visit::after { right: -165px; bottom: -260px; width: 450px; height: 450px; border-width: 22px; opacity: .45; }
     .visit .wrap { position: relative; z-index: 1; max-width: 730px; }
@@ -296,12 +404,16 @@
     .visit .section-title { max-width: 670px; margin-inline: auto; }
     .visit .section-copy { max-width: 535px; margin-inline: auto; color: rgba(255,255,255,.72); }
     .subscribe-form { display: flex; margin: 34px auto 0; padding: 5px; border: 1px solid rgba(255,255,255,.58); }
+    .visit .section-copy { max-width: 535px; margin-inline: auto; color: rgba(255, 255, 255, .72); }
+    .subscribe-form { display: flex; margin: 34px auto 0; padding: 5px; border: 1px solid rgba(255, 255, 255, .58); }
     .subscribe-form input { min-width: 0; flex: 1; padding: 11px 15px; border: 0; outline: 0; background: transparent; color: #fff; }
     .subscribe-form input::placeholder { color: rgba(255,255,255,.58); }
+    .subscribe-form input::placeholder { color: rgba(255, 255, 255, .58); }
     .subscribe-form button { min-height: 48px; padding: 10px 20px; border: 0; border-radius: 1px; background: var(--sand); color: var(--navy); font-size: 14px; font-weight: 700; transition: background .2s ease; }
     .subscribe-form button:hover { background: #f1ca83; }
 
     .site-footer { padding: 65px 0 25px; background: #031c31; color: rgba(255,255,255,.68); }
+    .site-footer { padding: 65px 0 25px; background: #031c31; color: rgba(255, 255, 255, .68); }
     .footer-grid { display: grid; grid-template-columns: 1.45fr .75fr .9fr; gap: 54px; padding-bottom: 46px; }
     .footer-brand .brand { margin-bottom: 18px; }
     .footer-brand p { max-width: 355px; margin: 0; font-size: 14px; }
@@ -309,6 +421,7 @@
     .footer-links, .footer-contact { display: grid; gap: 10px; font-size: 14px; }
     .footer-links a:hover, .footer-contact a:hover { color: #fff; }
     .footer-bottom { display: flex; justify-content: space-between; gap: 18px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.17); color: rgba(255,255,255,.47); font-size: 10px; letter-spacing: .1em; }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 18px; padding-top: 22px; border-top: 1px solid rgba(255, 255, 255, .17); color: rgba(255, 255, 255, .47); font-size: 10px; letter-spacing: .1em; }
 
     .toast {
       position: fixed;
@@ -348,6 +461,7 @@
       }
       .nav-links.open { max-height: 300px; }
       .nav-links a { padding: 12px 24px; border-top: 1px solid rgba(255,255,255,.1); }
+      .nav-links a { padding: 12px 24px; border-top: 1px solid rgba(255, 255, 255, .1); }
       .nav-links .nav-cta { margin: 8px 24px 16px; padding: 9px 12px; text-align: center; }
       .hero { min-height: 710px; }
       .hero-grid { grid-template-columns: 1fr; gap: 17px; padding-top: 112px; }
@@ -355,6 +469,8 @@
       .scroll-note { margin-top: 29px; }
       .hero-art { width: min(100%, 330px); height: 248px; min-height: 0; max-height: none; margin: 0; }
       .hero-photo { width: 330px; height: 248px; }
+      .hero-art { width: min(100%, 330px); height: 248px; margin: 0; }
+      .hero-photo { width: 330px; height: 248px; max-width: 100%; }
       .coffee-grid { grid-template-columns: repeat(2, 1fr); }
       .coffee-card:nth-child(3) { grid-column: span 2; }
       .story-grid, .brew-grid { grid-template-columns: 1fr; }
@@ -377,6 +493,8 @@
       .hero-meta { margin-top: 18px; }
       .hero-art { width: 260px; height: 195px; min-height: 0; max-height: none; }
       .hero-photo { width: 260px; height: 195px; }
+      .hero-art { width: 260px; height: 195px; }
+      .hero-photo { width: 260px; height: 195px; max-width: 100%; }
       .art-label { display: none; }
       .sun { width: 49px; height: 49px; }
       .coffee-vessel { bottom: 9%; left: 25%; transform: scale(.72); transform-origin: bottom left; }
@@ -395,6 +513,7 @@
       .brew-art { min-height: 310px; }
       .pour-rings { width: 185px; height: 185px; }
       .v60 { transform: translate(-50%,-28%) scale(.82); }
+      .v60 { transform: translate(-50%, -28%) scale(.82); }
       .subscribe-form { display: grid; gap: 6px; padding: 5px; }
       .subscribe-form input, .subscribe-form button { width: 100%; }
       .footer-grid { grid-template-columns: 1fr; gap: 32px; }
@@ -420,6 +539,8 @@
       <div class="nav-links" id="navLinks">
         <a href="#story">我們的故事</a>
         <a href="#coffee">本季選豆</a>
+        <a href="#story">我們的堅持</a>
+        <a href="#coffee">本季的選豆</a>
         <a href="#brew">沖煮日常</a>
         <a class="nav-cta" href="#visit">訂閱風味通信</a>
       </div>
@@ -433,16 +554,20 @@
           <p class="eyebrow">HAND BREWED · SLOWLY ROASTED</p>
           <h1 class="hero-title" id="heroTitle">讓風味，在<span class="sky-word">藍天</span>下慢慢抵達。</h1>
           <p class="hero-lede">藍天咖啡為喜歡手沖的您，挑選值得細品的單一產區咖啡豆。從第一縷花香，到最後一口回甘，每一杯都有屬於自己的晴朗天氣。</p>
+          <p class="hero-lede">藍天咖啡為喜歡手沖的你，挑選值得細品的單一產區咖啡豆。從第一縷花香，到最後一口回甘，每一杯都有自己的晴朗天氣。</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#coffee">探索本季咖啡豆 →</a>
+            <a class="button button-primary" href="#coffee">探索本季風味 →</a>
             <a class="button button-outline" href="#story">認識藍天</a>
           </div>
           <p class="hero-meta">TAIPEI · TAIWAN · EST. 2025</p>
+          <p class="hero-meta">TAIPEI · TAIWAN · EST. 2018</p>
           <p class="scroll-note">SCROLL TO DISCOVER</p>
         </div>
 
         <div class="hero-art" aria-hidden="true">
           <img class="hero-photo" src="images/hero.jpg" width="400" height="300" alt="">
+          <img class="hero-photo" src="images/hero.jpg" width="400" height="300" alt="藍天咖啡手沖意象">
           <span class="art-label"><strong>92°C</strong><span>理想水溫</span><small>細細喚醒香氣</small></span>
         </div>
       </div>
@@ -536,17 +661,21 @@
       <div class="footer-brand">
         <a class="brand" href="#top" aria-label="回到藍天咖啡首頁"><span class="brand-mark" aria-hidden="true">B</span><span class="brand-copy"><strong>藍天咖啡</strong><small>BLUE SKY COFFEE</small></span></a>
         <p>為喜歡手沖咖啡的你，留下一段慢慢品味、微微放晴的時間。</p>
+        <p>為喜愛手沖咖啡的你，留下一段慢慢品味、微微放晴的時間。</p>
       </div>
       <div>
         <p class="footer-heading">EXPLORE</p>
         <div class="footer-links"><a href="#story">我們的故事</a><a href="#coffee">本季選豆</a><a href="#brew">沖煮日常</a></div>
+        <div class="footer-links"><a href="#story">我們的堅持</a><a href="#coffee">本季選豆</a><a href="#brew">沖煮日常</a></div>
       </div>
       <div>
         <p class="footer-heading">CONTACT</p>
         <div class="footer-contact"><a href="mailto:hello@bluesky.coffee">hello@bluesky.coffee</a><span>台中市西屯區晨光路 100 號</span><span>每日 10:00 — 19:00</span></div>
+        <div class="footer-contact"><a href="mailto:hello@bluesky.coffee">hello@bluesky.coffee</a><span>台北市大安區晴朗路 18 號</span><span>每日 10:00 — 19:00</span></div>
       </div>
     </div>
     <div class="wrap footer-bottom"><span>© 2025 BLUE SKY COFFEE. ALL RIGHTS RESERVED.</span><span>BREW SLOW · LIVE BRIGHT</span></div>
+    <div class="wrap footer-bottom"><span>© 2026 BLUE SKY COFFEE. ALL RIGHTS RESERVED.</span><span>BREW SLOW · LIVE BRIGHT</span></div>
   </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
