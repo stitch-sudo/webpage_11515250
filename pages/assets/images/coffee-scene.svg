@@ -1,0 +1,18 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 600" role="img" aria-labelledby="title desc">
+  <title id="title">咖啡與藍天</title><desc id="desc">手繪風格的咖啡杯、咖啡豆與窗外晴朗天空</desc>
+  <rect x="40" y="34" width="640" height="510" rx="250" fill="#e9eee7"/>
+  <circle cx="542" cy="145" r="69" fill="#e5b75f"/>
+  <path d="M72 272c102-111 220-89 303 4 66 73 137 64 273-43v256H72z" fill="#9cad91"/>
+  <path d="M72 356c112-83 218-54 315 15 81 57 155 39 261-24v142H72z" fill="#71846b"/>
+  <path d="M220 251h246l-25 189c-4 31-27 54-58 54h-80c-31 0-54-23-58-54z" fill="#f7f1e5" stroke="#754f37" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M466 289h34c44 0 62 31 53 70-8 34-30 53-75 52" fill="none" stroke="#754f37" stroke-width="13" stroke-linecap="round"/>
+  <ellipse cx="343" cy="263" rx="123" ry="35" fill="#754f37"/>
+  <ellipse cx="343" cy="262" rx="99" ry="24" fill="#a87952"/>
+  <path d="M313 224c-13-21 18-27 2-50m37 48c-12-21 20-28 4-51m34 52c-12-18 14-26 3-42" fill="none" stroke="#b98b65" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="208" cy="470" rx="25" ry="15" transform="rotate(-26 208 470)" fill="#754f37"/>
+  <path d="M194 479q15-19 30-23" fill="none" stroke="#c9a17b" stroke-width="3"/>
+  <ellipse cx="533" cy="468" rx="24" ry="14" transform="rotate(23 533 468)" fill="#754f37"/>
+  <path d="M517 459q17 16 34 19" fill="none" stroke="#c9a17b" stroke-width="3"/>
+  <path d="M142 180l7 18 18 7-18 7-7 18-7-18-18-7 18-7zM576 342l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#f8f2df"/>
+  <path d="M260 500h187" stroke="#c2ad91" stroke-width="4" stroke-linecap="round"/>
+</svg>
