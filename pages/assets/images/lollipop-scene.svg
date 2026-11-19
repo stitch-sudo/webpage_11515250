@@ -1,0 +1,8 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 600" role="img" aria-labelledby="title desc">
+<title id="title">Lollipop 棒棒糖</title><desc id="desc">草莓紅、檸檬黃與薄荷綠的手繪棒棒糖</desc>
+<rect x="34" y="30" width="652" height="530" rx="250" fill="#edf6f7"/><circle cx="548" cy="139" r="62" fill="#f0cf72" opacity=".9"/><path d="M73 350c113-113 197-99 287-23s175 81 287-20v201H73z" fill="#c7e0d8"/><path d="M73 416c125-73 214-42 300 10 92 55 176 35 274-22v104H73z" fill="#b9dce9"/>
+<g transform="rotate(-13 235 280)"><path d="M235 323v169" stroke="#80a9b5" stroke-width="13" stroke-linecap="round"/><circle cx="235" cy="230" r="91" fill="#e78879"/><circle cx="235" cy="230" r="70" fill="#f8d2bd"/><circle cx="235" cy="230" r="51" fill="#e78879"/><path d="M202 209c15-19 42-26 62-14" fill="none" stroke="#fff1dc" stroke-width="8" stroke-linecap="round"/></g>
+<g transform="rotate(12 470 300)"><path d="M470 344v149" stroke="#80a9b5" stroke-width="13" stroke-linecap="round"/><circle cx="470" cy="249" r="89" fill="#f0c95f"/><circle cx="470" cy="249" r="67" fill="#fff0b0"/><circle cx="470" cy="249" r="48" fill="#f0c95f"/><path d="M441 226c15-18 40-23 59-12" fill="none" stroke="#fff9dc" stroke-width="8" stroke-linecap="round"/></g>
+<g transform="rotate(7 348 190)"><path d="M348 239v115" stroke="#80a9b5" stroke-width="11" stroke-linecap="round"/><circle cx="348" cy="169" r="66" fill="#9fcbb9"/><circle cx="348" cy="169" r="49" fill="#e1f1d7"/><circle cx="348" cy="169" r="33" fill="#9fcbb9"/></g>
+<path d="m128 173 7 17 17 7-17 7-7 17-7-17-17-7 17-7zm436 206 5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#fffdf7"/><circle cx="154" cy="438" r="8" fill="#e78879"/><circle cx="564" cy="174" r="7" fill="#a9cfbf"/><circle cx="382" cy="444" r="6" fill="#efc968"/>
+</svg>
